@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    let parksClient = ParksClient()
+    @State var parks: [Park] = []
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            ForEach(parks, id: \.title) { park in
+                Text(park.title)
+            }
         }
         .padding()
+        .onAppear {
+            Task {
+                parks = try await parksClient.getParks()
+            }
+        }
     }
 }
 
