@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "GreetingService",
+    name: "ParksServer",
     platforms: [
         .macOS(.v10_15)
     ],
@@ -16,7 +16,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "GreetingService",
+            name: "ParksServer",
             dependencies: [
                 .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime"),
                 .product(name: "OpenAPIVapor", package: "swift-openapi-vapor"),
