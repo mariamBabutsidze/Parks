@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Park {
+public struct Park: Equatable {
     let title: String
     let rating: String
     let icon: URL?

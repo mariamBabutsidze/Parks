@@ -15,8 +15,9 @@
 		322DB48E2B7A679300A5C1E3 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB48D2B7A679300A5C1E3 /* Park.swift */; };
 		322DB4922B90A60900A5C1E3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 322DB4912B90A60900A5C1E3 /* ComposableArchitecture */; };
 		322DB4952B90A7CE00A5C1E3 /* ParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB4942B90A7CE00A5C1E3 /* ParkView.swift */; };
+		322DB4972B90B61B00A5C1E3 /* ParksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB4962B90B61B00A5C1E3 /* ParksView.swift */; };
+		322DB49B2B90B65B00A5C1E3 /* ParksFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB49A2B90B65B00A5C1E3 /* ParksFeature.swift */; };
 		32D4F3EA2B751BC600B494BF /* ParksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4F3E92B751BC600B494BF /* ParksApp.swift */; };
-		32D4F3EC2B751BC600B494BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4F3EB2B751BC600B494BF /* ContentView.swift */; };
 		32D4F3EE2B751BC700B494BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4F3ED2B751BC700B494BF /* Assets.xcassets */; };
 		32D4F3F12B751BC700B494BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4F3F02B751BC700B494BF /* Preview Assets.xcassets */; };
 		32D4F3FB2B751BC700B494BF /* ParksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4F3FA2B751BC700B494BF /* ParksTests.swift */; };
@@ -47,9 +48,10 @@
 		322DB4852B7A5E6700A5C1E3 /* ParksClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksClient.swift; sourceTree = "<group>"; };
 		322DB48D2B7A679300A5C1E3 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		322DB4942B90A7CE00A5C1E3 /* ParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkView.swift; sourceTree = "<group>"; };
+		322DB4962B90B61B00A5C1E3 /* ParksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksView.swift; sourceTree = "<group>"; };
+		322DB49A2B90B65B00A5C1E3 /* ParksFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksFeature.swift; sourceTree = "<group>"; };
 		32D4F3E62B751BC600B494BF /* Parks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D4F3E92B751BC600B494BF /* ParksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksApp.swift; sourceTree = "<group>"; };
-		32D4F3EB2B751BC600B494BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		32D4F3ED2B751BC700B494BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32D4F3F02B751BC700B494BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32D4F3F62B751BC700B494BF /* ParksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,11 +116,12 @@
 				322DB4832B7A5E2300A5C1E3 /* openapi.yaml */,
 				322DB4812B7A5E1D00A5C1E3 /* openapi-generator-config.yaml */,
 				32D4F3E92B751BC600B494BF /* ParksApp.swift */,
-				32D4F3EB2B751BC600B494BF /* ContentView.swift */,
 				322DB4852B7A5E6700A5C1E3 /* ParksClient.swift */,
 				32D4F3ED2B751BC700B494BF /* Assets.xcassets */,
 				32D4F3EF2B751BC700B494BF /* Preview Content */,
 				322DB4942B90A7CE00A5C1E3 /* ParkView.swift */,
+				322DB4962B90B61B00A5C1E3 /* ParksView.swift */,
+				322DB49A2B90B65B00A5C1E3 /* ParksFeature.swift */,
 			);
 			path = Parks;
 			sourceTree = "<group>";
@@ -292,9 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322DB49B2B90B65B00A5C1E3 /* ParksFeature.swift in Sources */,
 				322DB4862B7A5E6700A5C1E3 /* ParksClient.swift in Sources */,
 				322DB4952B90A7CE00A5C1E3 /* ParkView.swift in Sources */,
-				32D4F3EC2B751BC600B494BF /* ContentView.swift in Sources */,
+				322DB4972B90B61B00A5C1E3 /* ParksView.swift in Sources */,
 				32D4F3EA2B751BC600B494BF /* ParksApp.swift in Sources */,
 				322DB48E2B7A679300A5C1E3 /* Park.swift in Sources */,
 			);

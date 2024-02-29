@@ -1,15 +1,17 @@
 //
-//  ContentView.swift
+//  ParksView.swift
 //  Parks
 //
-//  Created by Mariam Babutsidze on 08.02.24.
+//  Created by Mariam Babutsidze on 29.02.24.
 //
 
 import SwiftUI
+import ComposableArchitecture
 
-struct ContentView: View {
+struct ParksView: View {
     let parksClient = ParksClient()
     @State var parks: [Park] = []
+    let store: StoreOf<ParksFeature>
     
     var body: some View {
         VStack {
@@ -30,5 +32,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ParksView(store: Store(initialState: ParksFeature.State()) {
+        ParksFeature()
+    })
 }
