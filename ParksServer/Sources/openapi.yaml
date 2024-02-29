@@ -25,8 +25,11 @@ components:
       properties:
         title:
           type: string
-        description:
+        rating:
+          type: number
+        icon:
           type: string
       required:
         - title
-        - description
+        - rating
+        - icon

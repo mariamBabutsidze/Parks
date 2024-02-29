@@ -13,6 +13,8 @@
 		322DB4842B7A5E2300A5C1E3 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 322DB4832B7A5E2300A5C1E3 /* openapi.yaml */; };
 		322DB4862B7A5E6700A5C1E3 /* ParksClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB4852B7A5E6700A5C1E3 /* ParksClient.swift */; };
 		322DB48E2B7A679300A5C1E3 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB48D2B7A679300A5C1E3 /* Park.swift */; };
+		322DB4922B90A60900A5C1E3 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 322DB4912B90A60900A5C1E3 /* ComposableArchitecture */; };
+		322DB4952B90A7CE00A5C1E3 /* ParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322DB4942B90A7CE00A5C1E3 /* ParkView.swift */; };
 		32D4F3EA2B751BC600B494BF /* ParksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4F3E92B751BC600B494BF /* ParksApp.swift */; };
 		32D4F3EC2B751BC600B494BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4F3EB2B751BC600B494BF /* ContentView.swift */; };
 		32D4F3EE2B751BC700B494BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D4F3ED2B751BC700B494BF /* Assets.xcassets */; };
@@ -44,6 +46,7 @@
 		322DB4832B7A5E2300A5C1E3 /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
 		322DB4852B7A5E6700A5C1E3 /* ParksClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksClient.swift; sourceTree = "<group>"; };
 		322DB48D2B7A679300A5C1E3 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		322DB4942B90A7CE00A5C1E3 /* ParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkView.swift; sourceTree = "<group>"; };
 		32D4F3E62B751BC600B494BF /* Parks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D4F3E92B751BC600B494BF /* ParksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksApp.swift; sourceTree = "<group>"; };
 		32D4F3EB2B751BC600B494BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 			files = (
 				322DB4802B7A5DED00A5C1E3 /* OpenAPIURLSession in Frameworks */,
 				322DB47D2B7A5DAC00A5C1E3 /* OpenAPIRuntime in Frameworks */,
+				322DB4922B90A60900A5C1E3 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +118,7 @@
 				322DB4852B7A5E6700A5C1E3 /* ParksClient.swift */,
 				32D4F3ED2B751BC700B494BF /* Assets.xcassets */,
 				32D4F3EF2B751BC700B494BF /* Preview Content */,
+				322DB4942B90A7CE00A5C1E3 /* ParkView.swift */,
 			);
 			path = Parks;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			packageProductDependencies = (
 				322DB47C2B7A5DAC00A5C1E3 /* OpenAPIRuntime */,
 				322DB47F2B7A5DED00A5C1E3 /* OpenAPIURLSession */,
+				322DB4912B90A60900A5C1E3 /* ComposableArchitecture */,
 			);
 			productName = Parks;
 			productReference = 32D4F3E62B751BC600B494BF /* Parks.app */;
@@ -240,6 +246,7 @@
 				322DB47A2B7A5D6500A5C1E3 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
 				322DB47B2B7A5DAC00A5C1E3 /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
 				322DB47E2B7A5DED00A5C1E3 /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+				322DB4902B90A60900A5C1E3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 32D4F3E72B751BC600B494BF /* Products */;
 			projectDirPath = "";
@@ -286,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				322DB4862B7A5E6700A5C1E3 /* ParksClient.swift in Sources */,
+				322DB4952B90A7CE00A5C1E3 /* ParkView.swift in Sources */,
 				32D4F3EC2B751BC600B494BF /* ContentView.swift in Sources */,
 				32D4F3EA2B751BC600B494BF /* ParksApp.swift in Sources */,
 				322DB48E2B7A679300A5C1E3 /* Park.swift in Sources */,
@@ -648,6 +656,14 @@
 				minimumVersion = 1.0.1;
 			};
 		};
+		322DB4902B90A60900A5C1E3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -665,6 +681,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 322DB47A2B7A5D6500A5C1E3 /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
 			productName = "plugin:OpenAPIGenerator";
+		};
+		322DB4912B90A60900A5C1E3 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 322DB4902B90A60900A5C1E3 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

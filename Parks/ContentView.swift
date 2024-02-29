@@ -14,13 +14,16 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ForEach(parks, id: \.title) { park in
-                Text(park.title)
+                ParkView(park: park)
             }
+            Spacer()
         }
         .padding()
-        .onAppear {
-            Task {
+        .task {
+            do {
                 parks = try await parksClient.getParks()
+            } catch {
+                
             }
         }
     }
